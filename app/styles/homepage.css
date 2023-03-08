@@ -1,0 +1,133 @@
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 10rem;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-line {
+  width: 3px;
+  height: 4rem;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  margin-bottom: 4rem;
+}
+
+.sidebar-link:not(:last-child) {
+  margin-bottom: 4rem;
+}
+/* End Sidebar */
+
+.homepage-header {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+.main-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12.3rem;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 4.2rem;
+  width: 55rem;
+}
+
+.welcome-btn-container {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.learn-more-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  transform: translateX(-5rem);
+}
+
+.learn-more-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.homepage-about {
+  padding: 0 12.3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  margin-left: 12rem;
+}
+
+.about-intro {
+  width: 55rem;
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: var(--light-color);
+  margin-bottom: 4.8rem;
+}
+
+.about-desc {
+  width: 55rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: var(--gray-color);
+  margin-bottom: 8rem;
+}
+
+.homepage-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.homepage-blog {
+  padding: 0 12.3rem;
+}
+
+.homepage-blog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.homepage-blog-recommendations {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
