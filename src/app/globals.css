@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-b from-purple to-darkPurple;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2;
   }
 }
 
+:root {
+  --background-color: #f5f6fa;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .side-menu {
+    transform: translateX(-100%);
+    transition: all 0.6s ease;
+  }
+
+  .side-menu.active {
+    transform: translateX(0);
+  }
+}
+
+.hero-background {
+  background-image: url("/images/backdrop.svg"),
+    linear-gradient(180deg, #592fb4, #230086);
+  background-size: cover;
+}
+
+.hero-image {
+  transform: translate(-50%, -50%);
+}
+
+.hero-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-photo {
+  position: absolute;
+  top: -5.3rem;
+  left: 20.2rem;
+  width: 32.6rem;
+  height: 40rem;
+  border-radius: 8px;
+  background-color: #fbeaff;
+}
+
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
 }
