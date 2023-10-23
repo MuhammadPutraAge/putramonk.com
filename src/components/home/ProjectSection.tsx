@@ -9,7 +9,7 @@ export default function ProjectSection() {
       <SectionTitle title="Portfolio" subtitle="My Latest Project" />
 
       <div className="mt-80 xl:mt-40 xs:mt-24 flex xl:flex-col-reverse xl:items-center justify-between">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col xl:items-center">
           <h1 className="font-bold text-42 xs:text-24 text-purple leading-tight xl:text-center">
             Yayasan Teman Kita
           </h1>
@@ -21,7 +21,7 @@ export default function ProjectSection() {
             organization focuses on improving human quality and spreading access
             to literacy.
           </p>
-          <div className="flex xxs:flex-col justify-center items-center">
+          <div className="flex xxs:flex-col xl:justify-center items-center">
             <a
               className="py-20 xxs:py-12 px-24 bg-gold rounded-8 text-purple text-16 xs:text-12 font-bold mr-16 xxs:mr-0 xxs:mb-8"
               href="https://temankita.org"
