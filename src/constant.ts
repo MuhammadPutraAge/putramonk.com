@@ -165,7 +165,7 @@ export const CONTACT_LIST: Contact[] = [
   {
     contactIcon: '/icons/whatsapp.svg',
     contactTitle: 'Whatsapp Number',
-    contactValue: '+6282191194316',
+    contactValue: '+6285174421766',
   },
   {
     contactIcon: '/icons/email.svg',
