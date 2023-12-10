@@ -9,7 +9,7 @@ export default function Navbar() {
     <>
       <nav
         id="navbar"
-        className="absolute top-0 left-0 w-screen flex justify-between md:justify-center items-center px-120 lg:px-80 py-42 bg-transparent text-white"
+        className="absolute top-0 left-0 w-full flex justify-between md:justify-center items-center px-120 lg:px-80 py-42 bg-transparent text-white"
       >
         <Link href="/">
           <Image

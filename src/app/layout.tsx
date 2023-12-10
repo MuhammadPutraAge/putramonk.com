@@ -1,10 +1,7 @@
+import { Footer, Navbar } from "@/components/global";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
-import { Footer, Navbar } from "@/components/global";
-import { NAVBAR_LINKS } from "@/constant";
-import Link from "next/link";
-import Image from "next/image";
 
 const montserrat = Nunito({
   subsets: ["latin"],

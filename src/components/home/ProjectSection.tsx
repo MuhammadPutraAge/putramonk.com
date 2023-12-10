@@ -1,11 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SectionTitle } from ".";
-import { Button } from "../global";
-import Image from "next/image";
 
 export default function ProjectSection() {
   return (
-    <section id="projects" className="mb-180 sm:mb-60 px-120 xl:px-60 sm:px-42 xs:px-24">
+    <section
+      id="projects"
+      className="mb-180 sm:mb-60 px-120 xl:px-60 sm:px-42 xs:px-24"
+    >
       <SectionTitle title="Portfolio" subtitle="My Latest Project" />
 
       <div className="mt-80 xl:mt-40 xs:mt-24 flex xl:flex-col-reverse xl:items-center justify-between">
